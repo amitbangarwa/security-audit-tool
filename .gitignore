@@ -1,0 +1,8 @@
+node_modules/
+dist/
+releases/
+docs/
+*.crx
+*.pem
+.DS_Store
+coverage/
