@@ -6,9 +6,10 @@ Chrome Extension (Manifest V3) that provides one-click security header auditing 
 
 **Stack:** React 18 + TypeScript + Vite + Tailwind CSS + Zustand + Biome
 
-**Specs:**
-- `PRD.md` — Product requirements and acceptance criteria
-- `FUNCTIONAL_SPEC.md` — Implementation blueprint with exact code for every file
+**Specs (in `docs/`, git-ignored — internal only):**
+- `docs/PRD.md` — Product requirements and acceptance criteria
+- `docs/FUNCTIONAL_SPEC.md` — Implementation blueprint with exact code for every file
+- `docs/superpowers/plans/` — Implementation plans (not for public repo)
 
 ## Post-Task Workflow (MANDATORY)
 
