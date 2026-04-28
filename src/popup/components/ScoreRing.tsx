@@ -33,9 +33,10 @@ export function ScoreRing({ score, headerResults = [], size = 56 }: Props) {
   const dash = (score.total / 100) * circ;
 
   return (
-    // biome-ignore lint/a11y/noStaticElementInteractions: tooltip container uses hover/focus for disclosure
+    // biome-ignore lint/a11y/noStaticElementInteractions: tooltip container needs tabIndex for keyboard accessibility
     <div
       className="relative"
+      tabIndex={0}
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
       onFocus={() => setShowTooltip(true)}
