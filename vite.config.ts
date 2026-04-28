@@ -1,19 +1,20 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import webExtension from 'vite-plugin-web-extension';
+import { readFileSync } from 'fs';
 import path from 'path';
 
 export default defineConfig({
   plugins: [
     react(),
     webExtension({
-      manifest: () => require('./manifest.json'),
+      manifest: () => JSON.parse(readFileSync('./manifest.json', 'utf-8')),
       additionalInputs: ['src/content/index.ts'],
     }),
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(import.meta.dirname, './src'),
     },
   },
   build: {
