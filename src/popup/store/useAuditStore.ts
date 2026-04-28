@@ -135,6 +135,7 @@ export const useAuditStore = create<AuditStore>((set, get) => ({
         lastAuditTime: Date.now(),
       });
     } catch (err) {
+      // biome-ignore lint/suspicious/noConsole: error logging needed for debugging extension failures
       console.error('Audit failed:', err);
       set({ status: 'error', errorType: 'no-headers' });
     }

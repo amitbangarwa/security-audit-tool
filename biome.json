@@ -38,6 +38,11 @@
       "semicolons": "always"
     }
   },
+  "css": {
+    "linter": {
+      "enabled": false
+    }
+  },
   "files": {
     "includes": ["src/**", "tests/**"],
     "experimentalScannerIgnores": ["dist/", "node_modules/", "**/*.json"]
