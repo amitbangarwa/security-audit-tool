@@ -45,12 +45,13 @@ jobs:
           generate_release_notes: true
           name: "v${{ steps.version.outputs.VERSION }}"
 
-      - name: Publish to Chrome Web Store
-        if: ${{ secrets.CHROME_EXTENSION_ID != '' }}
-        uses: mnao305/chrome-extension-upload@v4.0.1
-        with:
-          file-path: releases/browser-security-audit-v${{ steps.version.outputs.VERSION }}.zip
-          extension-id: ${{ secrets.CHROME_EXTENSION_ID }}
-          client-id: ${{ secrets.CHROME_CLIENT_ID }}
-          client-secret: ${{ secrets.CHROME_CLIENT_SECRET }}
-          refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
+      # To publish to Chrome Web Store, uncomment and configure repository secrets:
+      # CHROME_EXTENSION_ID, CHROME_CLIENT_ID, CHROME_CLIENT_SECRET, CHROME_REFRESH_TOKEN
+      # - name: Publish to Chrome Web Store
+      #   uses: mnao305/chrome-extension-upload@v4.0.1
+      #   with:
+      #     file-path: releases/browser-security-audit-v${{ steps.version.outputs.VERSION }}.zip
+      #     extension-id: ${{ secrets.CHROME_EXTENSION_ID }}
+      #     client-id: ${{ secrets.CHROME_CLIENT_ID }}
+      #     client-secret: ${{ secrets.CHROME_CLIENT_SECRET }}
+      #     refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
