@@ -13,9 +13,18 @@ npm run test:e2e     # E2E tests (requires built dist/)
 npm run package      # Zip for distribution
 ```
 
-## Load in Chrome
+## Install (pre-built)
 
-1. Run `npm run build`
+1. Download the latest `.zip` from [Releases](../../releases/latest)
+2. Unzip to a permanent folder (do **not** delete it after installing)
+3. Open `chrome://extensions`
+4. Enable **Developer Mode** (toggle in the top-right corner)
+5. Click **Load unpacked** and select the unzipped folder
+6. Click the extension icon in the toolbar to audit any page
+
+## Load from Source
+
+1. Run `npm install && npm run build`
 2. Open `chrome://extensions`
 3. Enable Developer Mode
 4. Click "Load unpacked" and select `dist/`
