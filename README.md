@@ -15,22 +15,7 @@
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="MIT License">
 </p>
 
----
-
-<!-- TODO: Replace with actual demo GIF
-Record a ~10 second GIF showing:
-1. Click the extension icon on any website
-2. Score ring animates in
-3. Scroll through header results
-4. Switch to JWT tab
-
-Tools to record:
-- macOS: Kap (free, https://getkap.co)
-- Any OS: ScreenToGif, LICEcap, or built-in screen recorder + ffmpeg
-
-Save as .github/assets/demo.gif (keep under 5MB), then uncomment the line below:
--->
-<!-- <p align="center"><img src=".github/assets/demo.gif" alt="Demo" width="400"></p> -->
+ <p align="center"><img src="public/assets/demo.gif" alt="Demo" width="400"></p> 
 
 ## What It Does
 
@@ -55,11 +40,7 @@ Open any website, click the extension icon, and instantly see:
 | Cross-Origin-Embedder-Policy | 10 | Enables cross-origin isolation |
 | Cross-Origin-Resource-Policy | 5 | Controls cross-origin resource sharing |
 
-<!-- TODO: Add screenshot
-Take a screenshot of the popup showing a real audit with a mix of pass/warn/fail results.
-Save as .github/assets/screenshot.png, then uncomment:
--->
-<!-- <p align="center"><img src=".github/assets/screenshot.png" alt="Audit screenshot" width="360"></p> -->
+ <p align="center"><img src="public/assets/screenshot.png" alt="Audit screenshot" width="360"></p>
 
 ## Install
 
